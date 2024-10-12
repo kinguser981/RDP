@@ -11,7 +11,7 @@ jobs:
     - name: Download
       run: Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
     - name: Download Part 2
-      run: Invoke-WebRequest https://download856.mediafire.com/4a6fcnknl1kgVcpNEu7SECKevvBUYzvGqGSeSJkgBORaswubQCqtvHTLV5fOCXfI2QTuujsJGgipKoNiZZzM6UMXRoGoMCW6kSpAi5rGZnMpIVaqsyrAtVojwpi3AxVT2wtbF-IJKSjlOPFuxZygueDfEjqJjJgIDwE6DdZqQCb3/5yexfegvmdglih2/RDP+tool+2024+Full.zip -OutFile RDP tool 2024 Full.zip
+      run: Invoke-WebRequest https://download856.mediafire.com/4a6fcnknl1kgVcpNEu7SECKevvBUYzvGqGSeSJkgBORaswubQCqtvHTLV5fOCXfI2QTuujsJGgipKoNiZZzM6UMXRoGoMCW6kSpAi5rGZnMpIVaqsyrAtVojwpi3AxVT2wtbF-IJKSjlOPFuxZygueDfEjqJjJgIDwE6DdZqQCb3/5yexfegvmdglih2/RDP+tool+2024+Full.zip -OutFile RDP+tool+2024+Full.zip
     - name: Extract
       run: Expand-Archive ngrok.zip
     - name: Auth
