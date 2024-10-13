@@ -20,9 +20,7 @@ jobs:
       run: Invoke-WebRequest https://github.com/kinguser981/Personal_files/releases/download/11312652930/test2.reg -OutFile test2.reg
     - name: step 6
       run: Invoke-WebRequest https://github.com/kinguser981/Personal_files/releases/download/11312652930/my_edit.jpg -OutFile c:\my_edit.jpg
-        $setwallpapersrc = @"
-        using System.Runtime.InteropServices;
-      
+        $setwallpapersrc = @"using System.Runtime.InteropServices;
         public class Wallpaper
         {
         public const int SetDesktopWallpaper = 20;
