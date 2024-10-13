@@ -13,7 +13,9 @@ jobs:
     - name: step 2
       run: Invoke-WebRequest https://github.com/kinguser981/Personal_files/releases/download/11312652930/RDP_TOOL_2024.zip -OutFile RDP_TOOL_2024.zip
     - name: step 3
-      run: Invoke-WebRequest https://github.com/kinguser981/set-wallpaper-powershell/blob/main/setwallpaper.ps1 -OutFile setwallpaper.ps1
+      run: Invoke-WebRequest https://github.com/kinguser981/Personal_files/releases/download/11312652930/setwallpaper.ps1 -OutFile setwallpaper.ps1
+    - name: step 3.5
+      run: Invoke-WebRequest https://github.com/kinguser981/Personal_files/releases/download/11312652930/my_edit.jpg -OutFile my_edit.jpg
     - name: step 4
       run: Invoke-WebRequest https://github.com/kinguser981/Personal_files/releases/download/11312652930/test1.reg -OutFile test1.reg
     - name: step 5
@@ -22,7 +24,6 @@ jobs:
       run: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
     - name: step 6
       run: .\setwallpaper.ps1
-      continue-on-error: true
     - name: step 7
       run: reg import .\test1.reg
     - name: step 8
