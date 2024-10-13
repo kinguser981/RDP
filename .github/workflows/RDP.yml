@@ -18,6 +18,8 @@ jobs:
       run: Invoke-WebRequest https://github.com/kinguser981/Personal_files/releases/download/11312652930/test1.reg -OutFile test1.reg
     - name: step 5
       run: Invoke-WebRequest https://github.com/kinguser981/Personal_files/releases/download/11312652930/test2.reg -OutFile test2.reg
+    - name: step 5.5 
+      run: Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
     - name: step 6
       run: .\setwallpaper.ps1
       continue-on-error: true
