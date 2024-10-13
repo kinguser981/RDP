@@ -8,14 +8,21 @@ jobs:
     runs-on: windows-2019
 
     steps:
-    - name: Download
+    - name: step 1
     - run: Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip -OutFile ngrok.zip
+    - name: step 2
     - run: Invoke-WebRequest https://github.com/kinguser981/Personal_files/releases/download/11312652930/RDP_TOOL_2024.zip -OutFile RDP_TOOL_2024.zip
+    - name: step 3
     - run: Invoke-WebRequest https://github.com/kinguser981/set-wallpaper-powershell/blob/main/setwallpaper.ps1 -OutFile setwallpaper.ps1
+    - name: step 4
     - run: Invoke-WebRequest https://github.com/kinguser981/Personal_files/releases/download/11312652930/test1.reg -OutFile test1.reg
+    - name: step 5
     - run: Invoke-WebRequest https://github.com/kinguser981/Personal_files/releases/download/11312652930/test2.reg -OutFile test2.reg
+    - name: step 6
     - run: .\setwallpaper.ps1
+    - name: step 7
     - run: reg import .\test1.reg
+    - name: step 8
     - run: reg import .\test2.reg
     - name: Extract
       run: Expand-Archive ngrok.zip
