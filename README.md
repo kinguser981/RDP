@@ -8,6 +8,8 @@
 
 - https://dashboard.ngrok.com/endpoints
 
+Ex: if ur link is: (tcp://6.tcp.us-cal-1.ngrok.io:16711)
+ur vps ip will be(6.tcp.us-cal-1.ngrok.io:16711)
 
 Try to logging with this username and password:
 
