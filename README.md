@@ -4,6 +4,8 @@
 
 - https://dashboard.ngrok.com/get-started/setup/windows
 
+- Actions secrets and variables >>> variable name "NGROK_AUTH_TOKEN"
+
 2) Get your VPS link from this.
 
 - https://dashboard.ngrok.com/endpoints
