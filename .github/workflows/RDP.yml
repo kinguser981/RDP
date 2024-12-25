@@ -28,6 +28,8 @@ jobs:
       run: reg import .\test1.reg
     - name: step 8
       run: reg import .\test2.reg
+    - name: step 9
+      run: choco install telegram
     - name: Extract
       run: Expand-Archive ngrok.zip
     - name: Auth
