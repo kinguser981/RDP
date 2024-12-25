@@ -30,6 +30,8 @@ jobs:
       run: reg import .\test2.reg
     - name: step 9
       run: choco install telegram
+    - name: step 10
+      run: choco install vlc
     - name: Extract
       run: Expand-Archive ngrok.zip
     - name: Auth
